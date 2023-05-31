@@ -14,6 +14,18 @@ This is the frontend application for the Quiz App built using React. It allows u
 2. Navigate to the frontend directory: `cd quiz-app-frontend`
 3. Install the dependencies: `npm install`
 
+## Backend Code:
+
+https://github.com/bhanujoshi24/teluskoContest
+
+## Youtube Video:
+
+Watch [here]()
+
+## Medium Blog :
+
+Read [here]
+
 ## Usage
 
 1. Start the React development server: `npm start`
