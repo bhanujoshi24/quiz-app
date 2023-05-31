@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Quiz App Frontend (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend application for the Quiz App built using React. It allows users to take quizzes on various technologies and submit their answers.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Select a technology and quiz from the available options.
+- Answer multiple-choice questions for the selected quiz.
+- Submit the quiz and view the results.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository
+2. Navigate to the frontend directory: `cd quiz-app-frontend`
+3. Install the dependencies: `npm install`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+1. Start the React development server: `npm start`
+2. Open your browser and visit `http://localhost:3000` to access the Quiz App frontend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Configuration
 
-### `npm run build`
+The Quiz App frontend requires the backend API to be running. By default, it expects the backend to be running at `http://localhost:8080`. If your backend is running at a different address, you can update the API endpoint in the `src/api/apiConfig.js` file.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```javascript
+// src/api/apiConfig.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+const BASE_URL = "http://localhost:8080/api"; // Update this URL if needed
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+export default BASE_URL;
+```
